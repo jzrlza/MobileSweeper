@@ -20,4 +20,10 @@ public class GameEngine {
     }
 
     private GameEngine() {}
+
+    public void createGrid(Context context) {
+        this.context = context;
+
+
+    }
 }
