@@ -1,5 +1,7 @@
 package com.msassist.jbcom.minesweepassist.util;
 
+import android.util.Log;
+
 public class PrintGrid {
 
     public static void print( final int[][] grid , final int width , final int height ){
@@ -8,7 +10,7 @@ public class PrintGrid {
             for( int y = 0 ; y < height ; y++ ){
                 printedText += String.valueOf(grid[x][y]).replace("-1", "B") + " | ";
             }
-            System.out.print(printedText);
+            Log.e("",printedText);
 
         }
     }
