@@ -145,4 +145,10 @@ public class GameEngine {
             }
         }
     }
+
+    public void clearBoard() {
+        GeneratedGrid = Generator.generateEmpty(WIDTH, HEIGHT);
+        PrintGrid.print(GeneratedGrid,WIDTH,HEIGHT);
+        setGrid(context,GeneratedGrid);
+    }
 }
