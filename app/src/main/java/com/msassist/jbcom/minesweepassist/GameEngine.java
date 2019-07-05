@@ -2,9 +2,12 @@ package com.msassist.jbcom.minesweepassist;
 
 import android.content.Context;
 import android.util.Log;
+import android.widget.Toast;
+
 import com.msassist.jbcom.minesweepassist.util.Generator;
 import com.msassist.jbcom.minesweepassist.util.PrintGrid;
 import com.msassist.jbcom.minesweepassist.views.grid.Cell;
+
 
 /**
  *
@@ -16,8 +19,8 @@ public class GameEngine {
 
     private Context context;
     public static final int BOMBS = 20;
-    public static final int WIDTH = 8;
-    public static final int HEIGHT = 8;
+    public static final int WIDTH = 12;
+    public static final int HEIGHT = 12;
 
     private Cell[][] MinesweeperGrid = new Cell[WIDTH][HEIGHT];
 
@@ -57,5 +60,69 @@ public class GameEngine {
         int y = position / WIDTH;
 
         return MinesweeperGrid[x][y];
+    }
+
+    public Cell getCellAt( int x , int y ){
+        return MinesweeperGrid[x][y];
+    }
+
+    public void click( int x , int y ){
+        if( x >= 0 && y >= 0 && x < WIDTH && y < HEIGHT && !getCellAt(x,y).isClicked() ){
+            getCellAt(x,y).setClicked();
+
+            if( getCellAt(x,y).getValue() == 0 ){
+                for( int xt = -1 ; xt <= 1 ; xt++ ){
+                    for( int yt = -1 ; yt <= 1 ; yt++){
+                        if( xt != yt ){
+                            click(x + xt , y + yt);
+                        }
+                    }
+                }
+            }
+
+            if( getCellAt(x,y).isBomb() ){
+                onGameLost();
+            }
+        }
+
+        checkEnd();
+    }
+
+    private boolean checkEnd(){
+        int bombNotFound = BOMBS;
+        int notRevealed = WIDTH * HEIGHT;
+        for ( int x = 0 ; x < WIDTH ; x++ ){
+            for( int y = 0 ; y < HEIGHT ; y++ ){
+                if( getCellAt(x,y).isRevealed() || getCellAt(x,y).isFlagged() ){
+                    notRevealed--;
+                }
+
+                if( getCellAt(x,y).isFlagged() && getCellAt(x,y).isBomb() ){
+                    bombNotFound--;
+                }
+            }
+        }
+
+        if( bombNotFound == 0 && notRevealed == 0 ){
+            Toast.makeText(context,"Game won", Toast.LENGTH_SHORT).show();
+        }
+        return false;
+    }
+
+    public void flag( int x , int y ){
+        boolean isFlagged = getCellAt(x,y).isFlagged();
+        getCellAt(x,y).setFlagged(!isFlagged);
+        getCellAt(x,y).invalidate();
+    }
+
+    private void onGameLost(){
+        // handle lost game
+        Toast.makeText(context,"Game lost", Toast.LENGTH_SHORT).show();
+
+        for ( int x = 0 ; x < WIDTH ; x++ ) {
+            for (int y = 0; y < HEIGHT; y++) {
+                getCellAt(x,y).setRevealed();
+            }
+        }
     }
 }
