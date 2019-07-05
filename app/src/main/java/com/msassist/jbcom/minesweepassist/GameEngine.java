@@ -18,9 +18,9 @@ public class GameEngine {
     private static GameEngine instance;
 
     private Context context;
-    public static final int BOMBS = 20;
-    public static final int WIDTH = 12;
-    public static final int HEIGHT = 12;
+    public static final int BOMBS = 0;
+    public static final int WIDTH = 10;
+    public static final int HEIGHT = 10;
     public int[][] GeneratedGrid;
 
     private Cell[][] MinesweeperGrid = new Cell[WIDTH][HEIGHT];
