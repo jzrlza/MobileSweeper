@@ -30,6 +30,7 @@ public class Cell extends BaseCell implements View.OnClickListener, View.OnLongC
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         Log.d("Minesweeper" , "Cell::onDraw");
+        /*
         drawButton(canvas);
 
         if( isFlagged() ){
@@ -46,6 +47,12 @@ public class Cell extends BaseCell implements View.OnClickListener, View.OnLongC
             }else{
                 drawButton(canvas);
             }
+        }
+        */
+        if( getValue() == -1 ){
+            drawBombExploded(canvas);
+        }else {
+            drawNumber(canvas);
         }
     }
 

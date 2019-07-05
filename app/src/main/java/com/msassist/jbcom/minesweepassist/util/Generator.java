@@ -7,6 +7,12 @@ import java.util.Random;
  */
 public class Generator {
 
+    public static int[][] generateEmpty( final int width , final int height){
+        int [][] grid = new int[width][height];
+
+        return grid;
+    }
+
     public static int[][] generate( int bombnumber , final int width , final int height){
         // Random for generating numbers
         Random r = new Random();
@@ -31,7 +37,7 @@ public class Generator {
         return grid;
     }
 
-    private static int[][] calculateNeigbours( int[][] grid , final int width , final int height){
+    public static int[][] calculateNeigbours( int[][] grid , final int width , final int height){
         for( int x = 0 ; x < width ; x++){
             for( int y = 0 ; y < height ; y++){
                 grid[x][y] = getNeighbourNumber(grid,x,y,width,height);

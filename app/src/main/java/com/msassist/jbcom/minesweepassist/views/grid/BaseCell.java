@@ -9,7 +9,7 @@ public abstract class BaseCell extends View {
 
     private int value;
     private boolean isBomb;
-    private boolean isRevealed;
+    private boolean isRevealed = true;
     private boolean isClicked;
     private boolean isFlagged;
 

@@ -21,6 +21,7 @@ public class GameEngine {
     public static final int BOMBS = 20;
     public static final int WIDTH = 12;
     public static final int HEIGHT = 12;
+    public int[][] GeneratedGrid;
 
     private Cell[][] MinesweeperGrid = new Cell[WIDTH][HEIGHT];
 
@@ -38,7 +39,8 @@ public class GameEngine {
         this.context = context;
 
         // create the grid and store it
-        int[][] GeneratedGrid = Generator.generate(BOMBS, WIDTH, HEIGHT);
+        //int[][] GeneratedGrid = Generator.generate(BOMBS, WIDTH, HEIGHT);
+        GeneratedGrid = Generator.generateEmpty(WIDTH, HEIGHT);
         PrintGrid.print(GeneratedGrid,WIDTH,HEIGHT);
         setGrid(context,GeneratedGrid);
     }
@@ -67,6 +69,7 @@ public class GameEngine {
     }
 
     public void click( int x , int y ){
+        /*
         if( x >= 0 && y >= 0 && x < WIDTH && y < HEIGHT && !getCellAt(x,y).isClicked() ){
             getCellAt(x,y).setClicked();
 
@@ -83,9 +86,26 @@ public class GameEngine {
             if( getCellAt(x,y).isBomb() ){
                 onGameLost();
             }
-        }
+        }*/
 
-        checkEnd();
+        //checkEnd();
+
+        if( x >= 0 && y >= 0 && x < WIDTH && y < HEIGHT ){
+            //getCellAt(x,y).setClicked();
+
+            if( GeneratedGrid[x][y] >= 0 ){
+                //getCellAt(x,y).setValue(-1);
+                GeneratedGrid[x][y] = -1;
+            } else {
+                //getCellAt(x,y).setValue(0);
+                GeneratedGrid[x][y] = 0;
+            }
+            GeneratedGrid = Generator.calculateNeigbours(GeneratedGrid,WIDTH,HEIGHT);
+            setGrid(context,GeneratedGrid);
+            //getCellAt(x,y).invalidate();
+
+
+        }
     }
 
     private boolean checkEnd(){
