@@ -14,6 +14,11 @@ public class Grid extends GridView{
     public Grid(Context context , AttributeSet attrs){
         super(context,attrs);
 
+        GameEngine.getInstance().createGrid(context);
+
+        setNumColumns(GameEngine.WIDTH);
+        setAdapter(new GridAdapter());
+
     }
 
     private class GridAdapter extends BaseAdapter{
