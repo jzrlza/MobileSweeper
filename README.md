@@ -2,6 +2,10 @@
 
 Minesweeper Bomb Placement Analysis Assistant
 
+This application is a helper tool for those who aren't expeert at Minesweeper but wanted to move on as an expert player of the game, this is an analysis tool for reading the bomb patterns or number patterns in the grid to determine bombs placement in the mine field. Recommended for those who have trouble visioning mine patterns predictions when moving on as an expert player.
+
+Note that this is not an actual minesweeper game, it is a tool for expertize the gameplay.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -30,35 +34,59 @@ And repeat
 until finished
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+### Examples
+
+When we open the application, we start with the empty 10x10 grid.
 
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot0.jpg)
 
+When tap any cell on the grid, supposedly at the center, we place the mine there, and the numbers around it also appears. You can click the mine again to remove it.
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot1.jpg)
+
+When a cell have 2 mines in 2 of the adjacent cells, the number would be 2.
 
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot2.jpg)
 
+Same goes for 3.
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot3.jpg)
+
+4 mines around a cell.
 
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot4.jpg)
 
+5 mines around a cell.
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot5.jpg)
+
+6 mines around a cell. Which is gettering rare in real gameplay.
 
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot6.jpg)
 
+7 mines around a cell. Even rarer.
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot7.jpg)
+
+8 mines around a cell. When you see this in real gameplay, the game is a real trouble.
 
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot8.jpg)
 
+You can even fill the whole grid with mines, you can't see this in the real gameplay.
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot9.jpg)
 
+You can make arts of it.
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot10.jpg)
+![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot13.jpg)
+
+Here is the more serious use for helping the gameplay, if you remember the 1-2-1 and 1-2-2-1 patterns (certain mines patterns)  where the mines are certain in some spots in there. Some of these patterns may be hidden by the overlapping mines those modified the numbers of the pattern, you can use this tool to emulate the situation, and remove the overlapping mines away to uncover the certain mines patterns.
 
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot11.jpg)
-
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot12.jpg)
 
-![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot13.jpg)
+
 
 ## Built With
 
