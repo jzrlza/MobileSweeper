@@ -9,6 +9,10 @@ import android.view.ViewGroup;
 
 import com.msassist.jbcom.minesweepassist.GameEngine;
 
+/**
+ * Grid class object to display grid
+ * Created 05 July 2019
+ */
 public class Grid extends GridView{
 
     public Grid(Context context , AttributeSet attrs){

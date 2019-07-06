@@ -1,13 +1,14 @@
 package com.msassist.jbcom.minesweepassist;
 
-//import android.support.v7.app.AppCompatActivity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.msassist.jbcom.minesweepassist.GameEngine;
-
+/**
+ * Main Activity
+ * Created 05 July 2019
+ */
 public class MainActivity extends Activity {
 
     @Override

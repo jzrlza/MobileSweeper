@@ -1,38 +1,13 @@
 package com.msassist.jbcom.minesweepassist.util;
 
-import java.util.Random;
-
 /**
- * Created by Marcell on 2016. 04. 01..
+ * Generates grid, static class
+ * Created 05 July 2019
  */
 public class Generator {
 
     public static int[][] generateEmpty( final int width , final int height){
         int [][] grid = new int[width][height];
-
-        return grid;
-    }
-
-    public static int[][] generate( int bombnumber , final int width , final int height){
-        // Random for generating numbers
-        Random r = new Random();
-
-        int [][] grid = new int[width][height];
-        for( int x = 0 ; x< width ;x++ ){
-            grid[x] = new int[height];
-        }
-
-        while( bombnumber > 0 ){
-            int x = r.nextInt(width);
-            int y = r.nextInt(height);
-
-            // -1 is the bomb
-            if( grid[x][y] != -1 ){
-                grid[x][y] = -1;
-                bombnumber--;
-            }
-        }
-        grid = calculateNeigbours(grid,width,height);
 
         return grid;
     }

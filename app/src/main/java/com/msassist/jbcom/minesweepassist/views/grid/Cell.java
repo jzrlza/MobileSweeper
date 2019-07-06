@@ -10,6 +10,10 @@ import android.view.View;
 import com.msassist.jbcom.minesweepassist.GameEngine;
 import com.msassist.jbcom.minesweepassist.R;
 
+/**
+ * Solid concrete cell class, which it can load sprites.
+ * Created 05 July 2019
+ */
 public class Cell extends BaseCell implements View.OnClickListener, View.OnLongClickListener{
 
     public Cell( Context context , int x , int y ){
@@ -30,25 +34,7 @@ public class Cell extends BaseCell implements View.OnClickListener, View.OnLongC
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         Log.d("Minesweeper" , "Cell::onDraw");
-        /*
-        drawButton(canvas);
 
-        if( isFlagged() ){
-            drawFlag(canvas);
-        }else if( isRevealed() && isBomb() && !isClicked() ){
-            drawNormalBomb(canvas);
-        }else {
-            if( isClicked() ){
-                if( getValue() == -1 ){
-                    drawBombExploded(canvas);
-                }else {
-                    drawNumber(canvas);
-                }
-            }else{
-                drawButton(canvas);
-            }
-        }
-        */
         if( getValue() == -1 ){
             drawBombExploded(canvas);
         }else {

@@ -5,6 +5,10 @@ import android.view.View;
 
 import com.msassist.jbcom.minesweepassist.GameEngine;
 
+/**
+ * Base class of each cell
+ * Created 05 July 2019
+ */
 public abstract class BaseCell extends View {
 
     private int value;
@@ -37,32 +41,8 @@ public abstract class BaseCell extends View {
         this.value = value;
     }
 
-    public boolean isBomb() {
-        return isBomb;
-    }
-
-    public void setBomb(boolean bomb) {
-        isBomb = bomb;
-    }
-
-    public boolean isRevealed() {
-        return isRevealed;
-    }
-
-    public void setRevealed() {
-        isRevealed = true;
-        invalidate();
-    }
-
     public boolean isClicked() {
         return isClicked;
-    }
-
-    public void setClicked() {
-        this.isClicked = true;
-        this.isRevealed = true;
-
-        invalidate();
     }
 
     public boolean isFlagged() {
