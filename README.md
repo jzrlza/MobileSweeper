@@ -33,6 +33,7 @@ until finished
 End with an example of getting some data out of the system or using it for a little demo
 
 
+
 ## Built With
 
 * [Android Studio](https://developer.android.com/studio) - The development IDE used
@@ -50,4 +51,4 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 ## Acknowledgments
 
-* Inspiration - From playing the mobile game called "Minesweeper Collector", where there are lots of challenging minesweeper puzzles, in which I owned a premium account after I became an intermediate player for a while and wanted to be an expert player, at first I have trouble visioning the mines analysis so I have to come up with this.
+* Inspiration - From playing the mobile game called [Minesweeper Collector](https://play.google.com/store/apps/details?id=air.com.griffgriffgames.minesweeper&hl=en), where there are lots of challenging minesweeper puzzles, in which I owned a premium account after I became an intermediate player for a while and wanted to be an expert player, at first I have trouble visioning the mines analysis so I have to come up with this.
