@@ -1,4 +1,4 @@
-# Mine Sweep Assist (MobileSweep)
+# Mine Sweep Assist (MobileSweeper)
 
 Minesweeper Bomb Placement Analysis Assistant
 
