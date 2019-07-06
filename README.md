@@ -32,6 +32,7 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
+![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot0.jpg)
 
 
 ## Built With
