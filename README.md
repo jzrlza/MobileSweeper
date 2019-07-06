@@ -14,13 +14,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-[Android Studio](https://developer.android.com/studio) (and all of its prerequisites)
+[Android Studio](https://developer.android.com/studio) (and all of its prerequisites, such as Java)
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development environment running
-
-Say what the step will be
 
 ```
 1. Download or clone this project, place it somewhere accessible in the computer with enough free space.
