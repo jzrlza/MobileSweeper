@@ -14,24 +14,20 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
-Android Studio (and all of its prerequisites)
-```
+[Android Studio](https://developer.android.com/studio) (and all of its prerequisites)
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+A step by step series of examples that tell you how to get a development environment running
 
 Say what the step will be
 
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+1. Download or clone this project, place it somewhere accessible in the computer with enough free space.
+2. Run Android Studio and open this project
+3. Run by "Run > Run app", make sure you have a real Android phone + USB of it, or an emulated phone within Android Studio.
+4. Wait for a while, especially when it says "Installing APK".
+5. Enjoy the application
 ```
 
 ### Examples
