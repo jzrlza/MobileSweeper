@@ -100,3 +100,4 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 ## Acknowledgments
 
 * Inspiration - From playing the mobile game called [Minesweeper Collector](https://play.google.com/store/apps/details?id=air.com.griffgriffgames.minesweeper&hl=en), where there are lots of challenging minesweeper puzzles, in which I owned a premium account after I became an intermediate player for a while and wanted to be an expert player, at first I have trouble visioning the mines analysis so I have to come up with this.
+* Tutorial and What based on - It was based on [this project](https://github.com/marcellelek/Minesweeper), from the 4 parts tutorial of making Minesweeper in a simple way in Android phone. [Part 1.](https://www.youtube.com/watch?v=nORt4szAmkI) [Part 2.](https://www.youtube.com/watch?v=8oodzvSMIuQ) [Part 3.](https://www.youtube.com/watch?v=uYHhlvaNY2Y) [Part 4.](https://www.youtube.com/watch?v=t22KSVbtttE)
