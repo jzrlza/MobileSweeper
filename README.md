@@ -46,7 +46,7 @@ See also the list of [contributors](https://github.com/jzrlza/MobileSweeper/grap
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.txt](LICENSE.txt) file for details
 
 ## Acknowledgments
 
