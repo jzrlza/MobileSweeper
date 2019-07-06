@@ -4,7 +4,7 @@ Minesweeper Bomb Placement Analysis Assistant
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
@@ -33,18 +33,31 @@ until finished
 End with an example of getting some data out of the system or using it for a little demo
 
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot0.jpg)
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot1.jpg)
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot2.jpg)
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot3.jpg)
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot4.jpg)
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot5.jpg)
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot6.jpg)
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot7.jpg)
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot8.jpg)
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot9.jpg)
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot10.jpg)
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot11.jpg)
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot12.jpg)
+
 ![alt text](https://github.com/jzrlza/MobileSweeper/blob/master/screenshots/shot13.jpg)
 
 ## Built With
